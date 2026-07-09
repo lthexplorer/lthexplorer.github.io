@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentiana</title>
+    <!-- 样式模块：一个文件管一个组件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Gentiana</a>
+            <ul class="nav-links">
+                <li><a href="#hero">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="切换暗色模式">🌙</button>
+        </div>
+    </nav>
+
+    <!-- 首屏 -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-name">Gentiana</h1>
+            <p class="hero-tagline">这个人很懒，有无数想法却从来不开始动手</p>
+            <p class="hero-sub">——但今天，终于开始了。</p>
+            <div class="hero-scroll">
+                <span>往下看看</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-card">
+                <div class="about-avatar">G</div>
+                <div class="about-text">
+                    <p>
+                        你好，我是 <strong>Gentiana</strong>。
+                    </p>
+                    <p>
+                        一个脑子里塞满了各种想法的人。想学的东西堆成山，收藏夹里躺着无数教程，但真正打开的次数屈指可数。
+                    </p>
+                    <p>
+                        拖延不是懒，是害怕做得不够好。但今天我决定不再等了——先做出点什么，哪怕粗糙，也比永远停在脑子里强。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目 -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title">项目</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🌱</div>
+                    <h3>个人主页</h3>
+                    <p>就是这个网站。从零开始，一行行代码敲出来的——它本身就是第一个作品。</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card placeholder">
+                    <div class="project-icon">💡</div>
+                    <h3>下一个想法</h3>
+                    <p>这里留给将来。也许是一个小工具，也许是一篇博客，也许是你真正想做的那个东西。</p>
+                    <div class="project-tags">
+                        <span>即将开始</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">联系</h2>
+            <div class="contact-links">
+                <a href="#" class="contact-item" title="GitHub">
+                    <span class="contact-icon">🐙</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="#" class="contact-item" title="邮箱">
+                    <span class="contact-icon">📧</span>
+                    <span>邮箱</span>
+                </a>
+                <a href="#" class="contact-item" title="博客">
+                    <span class="contact-icon">📝</span>
+                    <span>博客</span>
+                </a>
+            </div>
+            <p class="contact-hint">这些链接暂时是空的——等你有了账号再填上。</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>© 2026 Gentiana · 从今天开始，不再只是想想</p>
+    </footer>
+
+    <!-- 脚本模块 -->
+    <script src="js/theme.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

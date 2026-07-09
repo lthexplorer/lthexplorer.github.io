@@ -1,0 +1,33 @@
+/* ===================================
+   联系方式
+   =================================== */
+
+.contact-links {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    color: var(--text) !important;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+.contact-item:hover {
+    border-color: var(--accent);
+    box-shadow: var(--card-shadow);
+}
+
+.contact-icon  { font-size: 1.1rem; }
+.contact-hint  { font-size: 0.82rem; color: var(--text-light); opacity: 0.7; }
+
+@media (max-width: 600px) {
+    .contact-links { flex-direction: column; gap: 12px; }
+}

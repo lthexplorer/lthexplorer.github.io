@@ -1,0 +1,58 @@
+/* ===================================
+   首屏
+   =================================== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+.hero-name {
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.hero-tagline {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 380px;
+    margin: 0 auto 8px;
+}
+
+.hero-sub {
+    font-size: 0.95rem;
+    color: var(--accent);
+    margin-bottom: 48px;
+}
+
+.hero-scroll {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    opacity: 0.6;
+}
+
+.scroll-arrow { animation: bounce 2s infinite; font-size: 1.1rem; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(6px); }
+}
+
+@media (max-width: 600px) {
+    .hero-name   { font-size: 2.4rem; }
+    .hero-tagline { font-size: 1rem; }
+}
